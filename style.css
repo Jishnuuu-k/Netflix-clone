@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.navLogo{
+    height: 100%;
+    width:40%;
+    display: flex;
+    margin-left: 10px;
+}
+.navOptions{
+    height: 100%;
+    width:60%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.navOptions div p{
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.navLogo img{
+    height: 90%;
+    margin-left: 40px;
+}
+.secondBox{
+    height: 650px;
+    width: 100%;
+    background-color: black;
+}
+
