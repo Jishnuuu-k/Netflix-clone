@@ -1,48 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.navBar{
+
+body {
+    max-width: 100%;
+}
+
+/* Navbar styles */
+.navBar {
     height: 60px;
     width: 100%;
     background-color: black;
     display: flex;
+    justify-content: space-around;
     border-bottom: 1px solid rgb(68, 66, 66);
 }
-.navLogo{
+
+.navLogo {
     height: 100%;
-    width:40%;
+    width: 40%;
     display: flex;
     margin-left: -7px;
 }
-.navOptions{
+
+.navOptions {
     height: 100%;
-    width:60%;
+    width: 60%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    
 }
-.navOptions div p{
-    font-size:13px;
+
+.navOptions div p {
+    font-size: 13px;
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
-.navLogo img{
+
+.navLogo img {
     height: 90%;
     margin-left: 40px;
 }
-.Banner{
+
+/* Banner styles */
+.Banner {
     height: 430px;
     width: 100%;
-    background-color: black;
     position: relative;
+    box-sizing: border-box;
 }
-.Banner img{
+
+.Banner img {
     height: 430px;
+    width: 100%;
 }
-.contents{
+
+.contents {
     height: 300px;
     width: 600px;
     position: absolute;
@@ -50,22 +64,28 @@
     top: 90px;
     color: white;
 }
-.num1{
+
+.num1 {
     color: #ff0000;
 }
-h1{
+
+h1 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.description{
+
+.description {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
 }
-.ButtonsFirst{
+
+/* Button styles */
+.ButtonsFirst {
     display: flex;
     gap: 3%;
 }
-.Button1{
+
+.Button1 {
     border: none;
     height: 35px;
     width: 130px;
@@ -74,7 +94,8 @@ h1{
     border-radius: 20px;
     box-shadow: #ff0000 0px 5px 15px;
 }
-.Button2{
+
+.Button2 {
     border: none;
     height: 35px;
     width: 130px;
@@ -82,24 +103,30 @@ h1{
     color: white;
     border-radius: 20px;
 }
-.icon{
+
+.icon {
     font-size: 27px;
-    
 }
-.SecondBox{
+
+/* SecondBox styles */
+.SecondBox {
     height: 140px;
     width: 80%;
-    background-color:rgb(14, 14, 14);
+    background-color: rgb(14, 14, 14);
     margin: auto;
 }
-.SecondBox .NavOptionsSecond .Trends{
+
+.SecondBox .NavOptionsSecond .Trends {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.SecondBox .NavOptionsSecond div p{
+
+.SecondBox .NavOptionsSecond div p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #7d7979;
 }
-.NavOptionsSecond{
+
+.NavOptionsSecond {
     height: 70px;
     width: 100%;
     color: white;
@@ -109,19 +136,22 @@ h1{
     border-bottom: 1px solid rgb(68, 66, 66);
 }
 
-.ThirdBox{
+/* ThirdBox styles */
+.ThirdBox {
     height: 70px;
     width: 100%;
-   background-color:rgb(14, 14, 14);
-   display: flex;
-   justify-content:space-around;
-   align-items: center;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.ButtonsSecond{
+
+.ButtonsSecond {
     display: flex;
     gap: 3%;
 }
-.Button3{
+
+.Button3 {
     border: none;
     height: 30px;
     width: 120px;
@@ -130,7 +160,8 @@ h1{
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.Button4{
+
+.Button4 {
     border: none;
     height: 35px;
     width: 130px;
@@ -139,13 +170,133 @@ h1{
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .trends {
     font-size: 25px;
-    color: #ffffff; /* Text color */
-  }
-  
-  .trends i {
+    color: #ffffff;
+}
+
+.trends i {
     margin-right: 8px;
     color: #ffffff;
-  }
-  
+}
+
+/* OtherMovies styles */
+.OtherMovies {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.OtherMovies::-webkit-scrollbar {
+    display: none;
+}
+
+.Movies {
+    height: 210px;
+    width: 100px;
+    min-width: 150px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.OtherMovies img {
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+}
+
+.icon {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navLogo, .navOptions {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .Banner {
+        height: auto;
+    }
+
+    .Banner img {
+        height: auto;
+    }
+
+    .contents {
+        height: auto;
+        width: 50%;
+        left: 10px;
+        top: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .Button1, .Button2 {
+        width: 100px;
+        height: 30px;
+    }
+
+    .OtherMovies {
+        gap: 10px;
+    }
+
+    .Movies {
+        height: 180px;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navLogo, .navOptions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navLogo img {
+        margin-left: 0;
+    }
+
+    .contents {
+        height: auto;
+        width: 50%;
+        left: 0;
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .Button1, .Button2, .Button3, .Button4 {
+        width: 80px;
+        height: 25px;
+    }
+
+    .OtherMovies {
+        gap: 5px;
+    }
+
+    .Movies {
+        height: 150px;
+        min-width: 100px;
+    }
+}
