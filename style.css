@@ -42,20 +42,16 @@ body {
     height: 90%;
     margin-left: 40px;
 }
-
-/* Banner styles */
 .Banner {
     height: 430px;
     width: 100%;
     position: relative;
     box-sizing: border-box;
 }
-
 .Banner img {
     height: 430px;
     width: 100%;
 }
-
 .contents {
     height: 300px;
     width: 600px;
@@ -64,11 +60,9 @@ body {
     top: 90px;
     color: white;
 }
-
 .num1 {
     color: #ff0000;
 }
-
 h1 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -135,8 +129,6 @@ h1 {
     align-items: center;
     border-bottom: 1px solid rgb(68, 66, 66);
 }
-
-/* ThirdBox styles */
 .ThirdBox {
     height: 70px;
     width: 100%;
@@ -145,10 +137,14 @@ h1 {
     justify-content: space-around;
     align-items: center;
 }
-
 .ButtonsSecond {
+    padding: 20px;
+    width: 100%;
     display: flex;
-    gap: 3%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .Button3 {
@@ -180,8 +176,6 @@ h1 {
     margin-right: 8px;
     color: #ffffff;
 }
-
-/* OtherMovies styles */
 .OtherMovies {
     padding: 20px;
     width: 100%;
