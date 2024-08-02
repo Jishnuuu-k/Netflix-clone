@@ -44,7 +44,7 @@
     box-sizing: border-box;
 }
 .Banner img {
-    height: 430px;
+    height: 100%;
     width: 100%;
 }
 .contents {
@@ -198,11 +198,17 @@ h1 {
 }
 @media only screen and (max-width: 400px) {
     .navOptions div p { 
-        font-size: 10px;
+        font-size: 6px;
+        font-weight: bold;
 }
 }
 @media only screen and (max-width: 400px) {
     .Details p { 
         font-size: 10px;
+}
+}
+@media only screen and (max-width: 400px) {
+    .Banner { 
+        height: 250px;
 }
 }
